@@ -21,5 +21,8 @@
     "build:cjs": "tsc -p tsconfig.json -m commonjs --outDir lib/cjs",
     "build:esm": "tsc -p tsconfig.json -m esnext --outDir lib/esm",
     "build": "run-p build:cjs build:esm"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
