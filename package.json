@@ -20,7 +20,8 @@
   "scripts": {
     "build:cjs": "tsc -p tsconfig.json -m commonjs --outDir lib/cjs",
     "build:esm": "tsc -p tsconfig.json -m esnext --outDir lib/esm",
-    "build": "run-p build:cjs build:esm"
+    "build": "run-p build:cjs build:esm",
+    "prepublishOnly": "npm version --no-git-tag-version --allow-same-version from-git"
   },
   "publishConfig": {
     "access": "public"
